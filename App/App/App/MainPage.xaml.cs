@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,11 @@ namespace App
         public MainPage()
         {
             InitializeComponent();
+
+            MessagingCenter.Subscribe<MainPageViewModel>(this, "AddSurvey", async (a) => {
+                await Navigation.PushModalAsync(new SurveyDetailsView());
+            });
+
         }
     }
 }

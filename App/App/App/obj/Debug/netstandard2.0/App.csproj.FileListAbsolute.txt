@@ -12,3 +12,4 @@ C:\Projects\Xamarin\App\App\App\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Projects\Xamarin\App\App\App\obj\Debug\netstandard2.0\App.dll
 C:\Projects\Xamarin\App\App\App\obj\Debug\netstandard2.0\ref\App.dll
 C:\Projects\Xamarin\App\App\App\obj\Debug\netstandard2.0\App.pdb
+C:\Projects\Xamarin\App\App\App\obj\Debug\netstandard2.0\SurveyDetailsView.xaml.g.cs
