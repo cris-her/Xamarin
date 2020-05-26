@@ -73,6 +73,7 @@
         <Label
             HorizontalOptions="Center"
             Style="{StaticResource OtroEstilo}"
+            TextColor = "Gray"
             Text="Welcome"
             VerticalOptions="CenterAndExpand" />
         <Button Style="{StaticResource EstiloBoton}" Text="Boton" />

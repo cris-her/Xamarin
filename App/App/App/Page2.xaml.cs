@@ -16,5 +16,10 @@ namespace App
         {
             InitializeComponent();
         }
+
+        private void OnClicked(object sender, EventArgs e)
+        {
+            MessagingCenter.Send(this, "Hola");
+        }
     }
 }
