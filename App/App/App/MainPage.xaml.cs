@@ -17,5 +17,15 @@ namespace App
         {
             InitializeComponent();
         }
+
+        /*private void OnClicked(object sender, EventArgs e)
+        {
+            //var disco1 = Resources["disco1"] as Disco;
+            //disco1.Titulo = "Revolver";
+
+            var disco1 = Resources["datos1"] as Datos;
+            datos1.Discos.Add(new Disco() { Banda = "Nirvana", Titulo = "Nevermind" });
+
+        }*/
     }
 }
