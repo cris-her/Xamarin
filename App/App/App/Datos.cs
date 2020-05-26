@@ -60,7 +60,7 @@ namespace App
 		private void AgregarDiscoCommandExecute()
 		{
 			Discos.Add(new Disco() { Banda = "Nirvana", Titulo = "Nevermind", Precio =  1, FechaLanzamiento = new DateTime(1991, 4, 4)});
-			AgregarDiscoCommandCanExecute();
+			AgregarDiscoCommand.ReevaluateCanExecute();
 		}
 	}
 }

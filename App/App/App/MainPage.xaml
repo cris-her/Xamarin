@@ -25,8 +25,9 @@
         <ListView
             x:Name="list1"
             HasUnevenRows="True"
-            ItemsSource="{Binding Discos, Source={StaticResource datos1}, Mode=TwoWay}"
-            SelectedItem="{Binding DiscoSeleccionado, Source={Static datos1}, Mode=TwoWay}">
+            ItemsSource="{Binding Discos, Mode=TwoWay}"
+            SelectedItem="{Binding DiscoSeleccionado, Mode=TwoWay}">
+            <!--  Source={StaticResource datos1}  -->
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <!--<TextCell Detail="{Binding Banda}" Text="{Binding Titulo}" />-->

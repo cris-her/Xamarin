@@ -11,7 +11,7 @@ namespace App
         Func<bool> canExecute;
 
         public event EventHandler CanExecuteChanged;
-        public void ReevaluateCan()
+        public void ReevaluateCanExecute()
         {
             CanExecuteChanged?.Invoke(this, EventArgs.Empty);
         }
