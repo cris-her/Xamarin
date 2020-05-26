@@ -1,16 +1,117 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="App.MainPage">
+<ContentPage
+    x:Class="App.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Pagina 1"
+    mc:Ignorable="d">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <!--<Label
+            HorizontalOptions="Center"
+            Text="Welcome to pagina 1!"
+            VerticalOptions="CenterAndExpand" />
+        <Button Clicked="OnClick" Text="Navegar" />-->
+        <Button Clicked="OnClicked" Text="Invocar" />
     </StackLayout>
 
+
+
+    <!--<Grid>
+        <Button
+            x:Name="button1"
+            Clicked="OnClicked"
+            HeightRequest="40"
+            HorizontalOptions="Center"
+            Text="Hola"
+            VerticalOptions="Center"
+            WidthRequest="200" />
+    -->
+    <!--  TranslationX="100" Rotation="45"  -->
+    <!--
+    </Grid>-->
+
+
+
+    <!--<ContentPage.Resources>
+        <Style x:Key="MiEstilo" TargetType="Label">
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="TextColor" Value="Red" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+        </Style>
+
+        <Style
+            x:Key="OtroEstilo"
+            BasedOn="{StaticResource MiEstilo}"
+            TargetType="Label">
+            <Setter Property="RotationX" Value="40" />
+        </Style>
+
+        <Style TargetType="Entry">
+            <Style.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="TextColor" Value="Red" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="EstiloBoton" TargetType="Button">
+            <Style.Triggers>
+                <DataTrigger
+                    Binding="{Binding Text.Length, Source={x:Reference entry1}}"
+                    TargetType="Button"
+                    Value="0">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Style="{StaticResource OtroEstilo}"
+            Text="Welcome"
+            VerticalOptions="CenterAndExpand" />
+        <Button Style="{StaticResource EstiloBoton}" Text="Boton" />
+    -->
+    <!--<Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="TextColor" Value="Red" />
+                </Style>
+            </Button.Style>
+
+        </Button>-->
+    <!--
+
+        <Entry />
+        <Entry />
+        <Entry x:Name="entry1" Text="" />
+    </StackLayout>-->
+
+
+
+    <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <BoxView
+            HeightRequest="200"
+            VerticalOptions="Center"
+            WidthRequest="200"
+            Color="Red" />
+        <BoxView
+            Grid.Column="1"
+            HeightRequest="200"
+            VerticalOptions="Center"
+            WidthRequest="200"
+            Color="Blue" />
+        <BoxView Grid.Column="2" Color="Black" />
+        <BoxView Grid.Column="3" Color="Green" />
+    </Grid>-->
+    <!--  Reto Tic Tac Toe  -->
 </ContentPage>
