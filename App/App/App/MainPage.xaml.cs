@@ -16,6 +16,14 @@ namespace App
         public MainPage()
         {
             InitializeComponent();
+            //boton.Clicked += OnClicked;
+            boton.Clicked += ( s, a ) => etiqueta.Text = "Hola " + DateTime.Now.ToString();
+        }
+
+        private void OnClicked(object sender, EventArgs e)
+        {
+            //var x = new Button();
+            //etiqueta.Text = "Hola " + DateTime.Now.ToString();
         }
     }
 }
